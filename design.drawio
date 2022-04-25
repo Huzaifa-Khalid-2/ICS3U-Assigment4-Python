@@ -21,9 +21,14 @@
                 <mxCell id="3" value="Input" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="20" y="200" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="4" edge="1">
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" edge="1" target="24">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="280" y="300" as="targetPoint"/>
+                        <mxPoint x="220" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=elbowEdgeStyle;html=1;elbow=vertical;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="27">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="350" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="4" value="Process" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -38,7 +43,7 @@
                 <mxCell id="6" value="get number of croissants from user" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="20" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Show user total cost accordingly" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="8" value="Show user total cost" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="420" y="290" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" edge="1">
@@ -47,8 +52,11 @@
                         <mxPoint x="480" y="200" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="total = (number_of_croissants* constants.CROISSANT_PRICE) *HST" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="195" y="300" width="170" height="70" as="geometry"/>
+                <mxCell id="24" value="If number of croissants &amp;lt; 6&lt;br&gt;total =(number_of_croissants* CROISSANT_PRICE) *HST" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="400" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="If number of croissants &amp;gt;= 6&lt;br&gt;total =(number_of_croissants* CROISSANT_PRICE)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="400" width="150" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
